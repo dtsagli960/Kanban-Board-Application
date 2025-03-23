@@ -11,14 +11,15 @@ const app = express();
 const PORT = process.env.PORT || 10000;
 
 const corsOptions = {
-  origin: 'https://kanban-board-application-pjsc.onrender.com', 
-  methods: 'GET,POST',
+  origin: ['https://kanban-board-application-stkm.onrender.com'], 
+  methods: 'GET,POST,PUT,DELETE', 
   credentials: true,
+  allowedHeaders: ['Content-Type', 'Authorization'], 
 };
 
 import cors from 'cors';
 app.use(cors(corsOptions));
-
+app.options('*', cors(corsOptions));
 // Serves static files in the entire client's dist folder
 app.use(express.static('../client/dist'));
 
