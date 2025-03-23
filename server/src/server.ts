@@ -8,10 +8,10 @@ import routes from './routes/index.js';
 import { sequelize } from './models/index.js';
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 10000;
 
 const corsOptions = {
-  origin: 'http://localhost:3000', 
+  origin: 'https://kanban-board-application-pjsc.onrender.com', 
   methods: 'GET,POST',
   credentials: true,
 };
