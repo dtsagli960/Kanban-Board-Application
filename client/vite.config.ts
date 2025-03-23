@@ -6,6 +6,7 @@ export default defineConfig({
     port: 3000,
     open: true,
     host: "0.0.0.0",
+    allowedHosts: ['kanban-board-application-pjsc.onrender.com'],
     proxy: {
       '/api': {
         target: 'http://localhost:3001',
