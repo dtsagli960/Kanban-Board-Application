@@ -9,12 +9,12 @@ export default defineConfig({
     allowedHosts: ['kanban-board-application-pjsc.onrender.com'],
     proxy: {
       '/api': {
-        target: 'http://localhost:3001',
+        target: 'kanban-board-application-pjsc:10000',
         changeOrigin: true,
         secure: false,
       },
       '/auth': {
-        target: 'http://localhost:3001',
+        target: 'kanban-board-application-pjsc:10000',
         changeOrigin: true,
         secure: false
       },
