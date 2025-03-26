@@ -5,7 +5,7 @@ const login = async (userInfo: UserLogin) => {
   console.log("userinfo",userInfo);
 
   try {
-    const response = await fetch(`https://kanban-board-application-pjsc.onrender.com/auth/login`, {
+    const response = await fetch(`/auth/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
