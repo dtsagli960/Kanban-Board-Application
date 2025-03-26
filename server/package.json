@@ -5,8 +5,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "build": "npx tsc",
-    "start": "npm run build && node dist/server.js --ignore client",
+    "build": "npx tsc && npm run seedd",
+    "start": "node dist/server.js --ignore client",
     "dev": "npx nodemon",
     "test": "echo \"Error: no test specified\" && exit 1",
     "seed": "node dist/seeds/index.js"
